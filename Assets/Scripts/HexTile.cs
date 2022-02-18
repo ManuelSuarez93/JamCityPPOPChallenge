@@ -1,23 +1,19 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using PathFinding;
 using UnityEngine;
-using UnityEngine.EventSystems;
+using Random = UnityEngine.Random;
 
-public enum TileType { Grass, Forest, Desert, Mountain, Water} 
+public enum TileType { Grass = 1, Forest = 3, Desert = 5, Mountain = 10, Water = 0} 
 public class HexTile : MonoBehaviour, IAStarNode
 { 
-    [SerializeField] private TileType _tileType; 
-    [SerializeField] private Transform _hex;
+    [SerializeField] private TileType _tileType;  
     [SerializeField] private List<HexTile> _neighbours;
-    [SerializeField] private float _adjacentRadius;
-    [SerializeField]  float _cost;
-    
-    private float _timer;
-    private bool _isSelected;
+    [SerializeField] private float _adjacentRadius;  
+    private float _cost; 
     private bool _isEnabled; 
+    public float Cost => _cost;
     public IEnumerable<IAStarNode> Neighbours => _neighbours;
 
     private void Start()
@@ -50,11 +46,7 @@ public class HexTile : MonoBehaviour, IAStarNode
         }
         
     }
-   
-    private void OnDrawGizmos()
-    {
-        Gizmos.DrawWireSphere(transform.position, _adjacentRadius);
-    }
+    
     public float CostTo(IAStarNode neighbour)
     {  
         var cost =  _neighbours.FirstOrDefault(x => x == (HexTile)neighbour)._cost;
@@ -66,54 +58,29 @@ public class HexTile : MonoBehaviour, IAStarNode
     {
         float totalCost = 0f; 
         HexTile current = this;
+        var tiles = LevelCreator.Instance.CreatedTiles;
+        foreach(HexTile tile in tiles)
+        {
+            try
+            { 
+                current =  current.Neighbours.FirstOrDefault(x => x.Neighbours.Contains(target)) != null ? 
+                    (HexTile)current.Neighbours.FirstOrDefault(x => x.Neighbours.Contains(target)) :
+                    (HexTile)current.Neighbours.Cast<HexTile>().OrderBy(x => x.Cost).FirstOrDefault();
+                    
+                totalCost += current.Cost;  
+            }
+            catch(Exception e){}
 
-        if(current.Neighbours.FirstOrDefault(x => x.Neighbours.Contains(target)) != null)
-        { 
-            current =  (HexTile)current.Neighbours.FirstOrDefault(x => x.Neighbours.Contains(target));
-            totalCost += current._cost;
         }
-        else
-        { 
-            current = _neighbours.OrderBy(x => x._cost).FirstOrDefault();
-            totalCost += current._cost;
-        }
-
+       
         Debug.Log($" Estimated Cost is: {totalCost}");
         return totalCost;
     }
-
-     // private void OnMouseEnter()
-    // { 
-    //     StopAllCoroutines();
-
-    //     if(!isSelected)
-    //         StartCoroutine(DoLerp(1f, new Vector3(_hex.position.x, _hex.position.y + 1))); 
-
-    //     isSelected = true;
-    // }
-    // private void OnMouseExit()
-    // { 
-    //     StopAllCoroutines();
-
-    //     if(isSelected)
-    //         StartCoroutine(DoLerp(1f, new Vector3(_hex.position.x, _hex.position.y - 1)));
-
-    //     isSelected = false;
-    // }
-    // IEnumerator DoLerp(float amount, Vector3 position)
-    // { 
-    //     _timer = 0;
-    //     while(_timer < amount)
-    //     {
-    //         float t = _timer / amount;
-    //         t = t * t * (3f - 2f * t);
-    //         _hex.position = Vector3.Lerp(_hex.position, position * amount, _timer/amount);
-            
-    //         _timer += Time.deltaTime;
-    //         yield return null; 
-    //     }
-    //     _hex.position = position * amount;
-        
-    // }
+    public void InitializeTile(TileType newType, Material newTexture)
+    {  
+        _tileType = newType;
+        GetComponentInChildren<MeshRenderer>().material = newTexture;
+        _cost = (int)_tileType;
+    } 
 }
  

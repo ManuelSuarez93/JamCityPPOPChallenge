@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1be6ce280d8ec3a4eb406f1e87438801, type: 3}
+  m_Name: DesertTile
+  m_EditorClassIdentifier: 
+  _tileType: 5
+  _hexPrefab: {fileID: 7205454726383743954, guid: 8f74346797d73d94182d3f7ad07a3897, type: 3}
+  _tileTexture: {fileID: 2100000, guid: 2e59c02728f4ed44c8b0d364983f8448, type: 2}

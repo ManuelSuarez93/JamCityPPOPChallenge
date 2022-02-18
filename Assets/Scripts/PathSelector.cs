@@ -2,12 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using PathFinding;
+using System;
 
 public class PathSelector : MonoBehaviour
 {
     public static PathSelector Instance {get; set;}
-    HexTile firstTile;
-    HexTile lastTile; 
+    private HexTile _firstTile;
+    private HexTile _lastTile;
+    private IList<IAStarNode> _nodes;
+    public IList<IAStarNode> Nodes => _nodes;
+    
     void Awake()
     {
         if (Instance != null && Instance != this) 
@@ -20,20 +24,29 @@ public class PathSelector : MonoBehaviour
         } 
     }
     public void StartPath(HexTile newTile)
-    {
-        
-        if(firstTile == null)
+    { 
+        if(_firstTile == null)
         {
-            firstTile = newTile;
+            _firstTile = newTile;
         }
         else
-        {
-            if(lastTile == null) 
-                lastTile = newTile; 
-            else 
-                CalculatePath(); 
+        { 
+            _lastTile = newTile; 
+            _nodes = (CalculatePath());
+            ShowPath();
         }
     }
 
-    public  void CalculatePath() => Debug.Log(AStar.GetPath(firstTile, lastTile).Count);
+    private void ShowPath()
+    { 
+        if(_nodes == null) return;
+        
+        foreach(IAStarNode ia in _nodes)
+        {
+            var tile = (HexTile)ia;
+            tile.gameObject.transform.position += new Vector3(0,1,0);
+        }
+    }
+
+    public  IList<IAStarNode> CalculatePath() => AStar.GetPath(_firstTile, _lastTile);
 }

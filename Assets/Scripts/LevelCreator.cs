@@ -4,17 +4,28 @@ using UnityEngine;
 
 public class LevelCreator : MonoBehaviour
 {
-    [SerializeField] GameObject _hexTiles;
+    public static LevelCreator Instance {get; set;}
+    [SerializeField] List<TileObject> _hexTiles;
     [SerializeField] public int _mapHeight, _mapWidth;
-
-    [SerializeField] float _offsetx, _offsetz;
-
-    private List<GameObject> _createdTiles = new List<GameObject>();
+    [SerializeField] Vector3 _offset;
+    private List<HexTile> _createdTiles = new List<HexTile>();
     private bool _finishedLevel;
     public bool FinishedLevel => _finishedLevel;
     public int MapSize => _mapHeight * _mapWidth;
-    public int TilesAmount => _createdTiles.Count;
-    public GameObject HexTile {get => _hexTiles; set => _hexTiles = value;}
+    public List<HexTile> CreatedTiles => _createdTiles;
+    public List<TileObject> HexTiles {get => _hexTiles; set => _hexTiles = value;}
+
+    private void Awake()
+    {
+        if (Instance != null && Instance != this) 
+        { 
+            Destroy(this); 
+        } 
+        else 
+        { 
+            Instance = this; 
+        } 
+    }
     public void CreateLevel()
     {  
         if(_createdTiles.Count > 0) DestroyLevel(); 
@@ -23,11 +34,11 @@ public class LevelCreator : MonoBehaviour
         _finishedLevel = false;
         for(int i = 0; i < _mapHeight; i++)
         { 
-            currentoffsetz -= i > 0 ? _offsetz : 0;
-            currentoffsetx += i % 2 == 0 ? 0 : _offsetx/2;
+            currentoffsetz -= i > 0 ? _offset.z : 0;
+            currentoffsetx += i % 2 == 0 ? 0 : _offset.x/2;
             for(int j = 0; j < _mapWidth; j++)
             {
-                currentoffsetx += j > 0 ? _offsetx : 0;
+                currentoffsetx += j > 0 ? _offset.x : 0;
                 CreateTile(currentoffsetx, currentoffsetz);
             }
             currentoffsetx = 0f;
@@ -38,19 +49,21 @@ public class LevelCreator : MonoBehaviour
 
     private void CreateTile(float currentoffsetx, float currentoffsetz)
     {
-        var tile = Instantiate(_hexTiles, new Vector3(currentoffsetx, 0, currentoffsetz), Quaternion.identity);
-        if(_createdTiles == null) _createdTiles = new List<GameObject>();
+        var tile = _hexTiles[Random.Range(0,_hexTiles.Count)].CreateTile(currentoffsetx, currentoffsetz); 
+
+        if(_createdTiles == null) _createdTiles = new List<HexTile>();
+
         _createdTiles.Add(tile);
     }
 
     private void SetAdjacentTiles()
     {
-        foreach(GameObject tile in _createdTiles) 
-            tile.GetComponent<HexTile>().GetAdjacentTiles(); 
+        foreach(HexTile tile in _createdTiles) 
+            tile.GetAdjacentTiles(); 
     }
     public void DestroyLevel()
     {
-        _createdTiles.ForEach(x => Destroy(x));
+        _createdTiles.ForEach(x => Destroy(x.gameObject));
         _createdTiles.Clear();
     }
     
@@ -58,4 +71,6 @@ public class LevelCreator : MonoBehaviour
      => _mapHeight = (int)height;
     public void SetWidth(float width)
      =>  _mapWidth = (int)width; 
+     public void SetOffset(Vector3 offset)
+     => _offset = offset;
 }

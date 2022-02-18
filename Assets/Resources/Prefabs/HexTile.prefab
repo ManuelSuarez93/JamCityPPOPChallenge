@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _tileType: 0
-  _hex: {fileID: 7238502416737381026}
+  _neighbours: []
   _adjacentRadius: 0.75
 --- !u!64 &3658886338764089937
 MeshCollider:
@@ -117,7 +117,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 082418e158804f8439b7c4e1ff02d088, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 2e59c02728f4ed44c8b0d364983f8448, type: 2}
+      objectReference: {fileID: 7794395161262391607, guid: 082418e158804f8439b7c4e1ff02d088, type: 3}
     - target: {fileID: 919132149155446097, guid: 082418e158804f8439b7c4e1ff02d088, type: 3}
       propertyPath: m_Name
       value: Hexagon_Model
