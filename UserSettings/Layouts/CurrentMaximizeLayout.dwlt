@@ -24,7 +24,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 73
+  controlID: 49
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -45,9 +45,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 344
+    x: 573
     y: 73
-    width: 1171
+    width: 916
     height: 549
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -113,7 +113,7 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: -93.5, y: 86}
+      snapOffset: {x: -111, y: 86}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 1
       id: Orientation
@@ -241,18 +241,18 @@ MonoBehaviour:
       index: 10
       layout: 4
   m_WindowGUID: cc27987af1a868c49b0894db9c0f5429
-  m_Gizmos: 1
+  m_Gizmos: 0
   m_OverrideSceneCullingMask: 6917529027641081856
   m_SceneIsLit: 1
   m_SceneLighting: 1
-  m_2DMode: 1
+  m_2DMode: 0
   m_isRotationLocked: 0
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 690.0793, y: 167.27104, z: -0.7452068}
+    m_Target: {x: 102.48375, y: -584.01117, z: 714.80334}
     speed: 2
-    m_Value: {x: 690.0793, y: 167.27104, z: -0.7452068}
+    m_Value: {x: 102.48375, y: -584.01117, z: 714.80334}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -281,35 +281,35 @@ MonoBehaviour:
       m_Size: {x: 0, y: 0}
     yGrid:
       m_Fade:
-        m_Target: 0
-        speed: 2
-        m_Value: 0
-      m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
-      m_Pivot: {x: 0, y: 0, z: 0}
-      m_Size: {x: 0.25, y: 0.25}
-    zGrid:
-      m_Fade:
         m_Target: 1
         speed: 2
         m_Value: 1
       m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
       m_Pivot: {x: 0, y: 0, z: 0}
-      m_Size: {x: 0.25, y: 0.25}
+      m_Size: {x: 2.5, y: 2.5}
+    zGrid:
+      m_Fade:
+        m_Target: 0
+        speed: 2
+        m_Value: 0
+      m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
+      m_Pivot: {x: 0, y: 0, z: 0}
+      m_Size: {x: 2.5, y: 2.5}
     m_ShowGrid: 1
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0, y: 0, z: 0, w: 1}
+    m_Target: {x: 0.33366373, y: 0.057468038, z: -0.0036119465, w: 0.9409426}
     speed: 2
-    m_Value: {x: 0, y: 0, z: 0, w: 1}
+    m_Value: {x: 0.3336604, y: 0.057467464, z: -0.0036119104, w: 0.94093317}
   m_Size:
-    m_Target: 272.42694
+    m_Target: 469.8477
     speed: 2
-    m_Value: 272.42694
+    m_Value: 469.8477
   m_Ortho:
-    m_Target: 1
+    m_Target: 0
     speed: 2
-    m_Value: 1
+    m_Value: 0
   m_CameraSettings:
     m_Speed: 1
     m_SpeedNormalized: 0.5
@@ -323,8 +323,8 @@ MonoBehaviour:
     m_FarClip: 10000
     m_DynamicClip: 1
     m_OcclusionCulling: 0
-  m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
-  m_LastSceneViewOrtho: 0
+  m_LastSceneViewRotation: {x: 0.23761603, y: -0.11823155, z: 0.045552205, w: 0.9630663}
+  m_LastSceneViewOrtho: 1
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
   m_SceneVisActive: 1
@@ -349,12 +349,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1517
+    width: 1491
     height: 947
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 74
+  controlID: 50
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -374,12 +374,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1517
+    width: 1491
     height: 570
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 75
+  controlID: 51
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -397,10 +397,10 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 344
+    width: 573
     height: 570
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 6}
   m_Panes:
   - {fileID: 6}
@@ -428,7 +428,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 73
-    width: 343
+    width: 572
     height: 549
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -436,10 +436,10 @@ MonoBehaviour:
     m_SaveData: []
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: e2d0ffff
-      m_LastClickedID: -12062
-      m_ExpandedIDs: 04d3ffff54d3ffff58d6ffff3cfbffffb8580000e85a0000
+      scrollPos: {x: 0, y: 144}
+      m_SelectedIDs: d0e6ffff
+      m_LastClickedID: -6448
+      m_ExpandedIDs: 3cfbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -478,9 +478,9 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 344
+    x: 573
     y: 0
-    width: 1173
+    width: 918
     height: 570
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
@@ -510,9 +510,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 344
+    x: 573
     y: 73
-    width: 1171
+    width: 916
     height: 549
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -526,7 +526,7 @@ MonoBehaviour:
   m_ShowGizmos: 1
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 939, y: 528}
+  m_TargetSize: {x: 916, y: 515}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -541,10 +541,10 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -469.5
-    m_HBaseRangeMax: 469.5
-    m_VBaseRangeMin: -264
-    m_VBaseRangeMax: 264
+    m_HBaseRangeMin: -458
+    m_HBaseRangeMax: 458
+    m_VBaseRangeMin: -257.5
+    m_VBaseRangeMax: 257.5
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -553,7 +553,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
+    m_EnableMouseInput: 0
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -562,23 +562,23 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 1171
+      width: 916
       height: 528
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 585.5, y: 264}
+    m_Translation: {x: 458, y: 264}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -585.5
+      x: -458
       y: -264
-      width: 1171
+      width: 916
       height: 528
     m_MinimalGUI: 1
   m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 1171, y: 549}
+  m_LastWindowPixelSize: {x: 916, y: 549}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -601,10 +601,10 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 570
-    width: 1517
+    width: 1491
     height: 377
-  m_MinSize: {x: 101, y: 121}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 11}
   m_Panes:
   - {fileID: 10}
@@ -634,7 +634,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 643
-    width: 1516
+    width: 1490
     height: 356
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -653,22 +653,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Tests/PlayTest
+    - Assets/Scripts
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
-  m_StartGridSize: 64
+  m_StartGridSize: 82
   m_LastFolders:
-  - Assets/Tests/PlayTest
-  m_LastFoldersGridSize: -1
+  - Assets/Scripts
+  m_LastFoldersGridSize: 82
   m_LastProjectPath: C:\Users\Admin\Documents\gameprojects\JamCityPPOPChallenge
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 8c590000
-    m_LastClickedID: 22924
-    m_ExpandedIDs: 000000003c5900003e59000040590000
+    m_SelectedIDs: 225a0000
+    m_LastClickedID: 23074
+    m_ExpandedIDs: 00000000025a0000045a0000065a000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -696,7 +696,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000003c5900003e59000040590000
+    m_ExpandedIDs: 00000000025a0000045a0000065a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -721,8 +721,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 80e3ffff
-    m_LastClickedInstanceID: -7296
+    m_SelectedInstanceIDs: a21c0000
+    m_LastClickedInstanceID: 7330
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
@@ -749,7 +749,7 @@ MonoBehaviour:
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
     m_ScrollPosition: {x: 0, y: 0}
-    m_GridSize: 64
+    m_GridSize: 82
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 207
 --- !u!114 &11
@@ -774,7 +774,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 643
-    width: 1516
+    width: 1490
     height: 356
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -802,14 +802,14 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 643
-    width: 1516
+    width: 1490
     height: 356
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
     m_SaveData: []
   m_Spl:
-    ID: 10991
+    ID: 386
     splitterInitialOffset: 146
     currentActiveSplitter: -1
     realSizes:
@@ -841,7 +841,7 @@ MonoBehaviour:
       name: JamCityPPOPChallenge
       fullName: JamCityPPOPChallenge
       resultStatus: 1
-      duration: 0.1061896
+      duration: 0.1430917
       messages: 
       output: 
       stacktrace: 
@@ -857,7 +857,7 @@ MonoBehaviour:
       name: PlayTest.dll
       fullName: C:/Users/Admin/Documents/gameprojects/JamCityPPOPChallenge/Library/ScriptAssemblies/PlayTest.dll
       resultStatus: 1
-      duration: 0.0523937
+      duration: 0.0842896
       messages: 
       output: 
       stacktrace: 
@@ -873,7 +873,7 @@ MonoBehaviour:
       name: LevelCreatorTest
       fullName: LevelCreatorTest
       resultStatus: 1
-      duration: 0.0451305
+      duration: 0.0766669
       messages: 
       output: 
       stacktrace: 
@@ -884,12 +884,46 @@ MonoBehaviour:
       categories: []
       parentId: 1004
       parentUniqueId: '[PlayTest][C:/Users/Admin/Documents/gameprojects/JamCityPPOPChallenge/Library/ScriptAssemblies/PlayTest.dll][suite]'
+    - id: 1003
+      uniqueId: PlayTest.dll/LevelCreatorTest/[PlayTest][LevelCreatorTest.GenerateLevelAndCreatePath]
+      name: GenerateLevelAndCreatePath
+      fullName: LevelCreatorTest.GenerateLevelAndCreatePath
+      resultStatus: 1
+      duration: 0.0618253
+      messages: 
+      output: " Estimated Cost is: 5\r\nCost is: 10\r\n Estimated Cost is: 5\r\nCost
+        is: 5\r\n Estimated Cost is: 0\r\nCost is: 3\r\n Estimated Cost is: 0\r\nCost
+        is: 0\r\n Estimated Cost is: 0\r\nCost is: 10\r\nCost is: 0\r\n Estimated
+        Cost is: 0\r\nCost is: 10\r\n Estimated Cost is: 0\r\nCost is: 3\r\nCost
+        is: 3\r\n Estimated Cost is: 0\r\nCost is: 10\r\nCost is: 5\r\n Estimated
+        Cost is: 25\r\nCost is: 3\r\nCost is: 0\r\n Estimated Cost is: 0\r\nCost
+        is: 5\r\nCost is: 1\r\n Estimated Cost is: 25\r\nCost is: 3\r\nCost is: 1\r\nEstimated
+        Cost is: 0\r\nCost is: 0\r\n Estimated Cost is: 0\r\nCost is: 3\r\nCost is:
+        10\r\nCost is: 1\r\nCost is: 10\r\n Estimated Cost is: 0\r\nCost is: 5\r\n
+        Estimated Cost is: 0\r\nCost is: 1\r\nCost is: 5\r\n Estimated Cost is: 29\r\nCost
+        is: 5\r\nCost is: 5\r\n Estimated Cost is: 1\r\nCost is: 10\r\nCost is: 1\r\n
+        Estimated Cost is: 25\r\nCost is: 1\r\n Estimated Cost is: 25\r\nCost is:
+        10\r\nCost is: 1\r\n Estimated Cost is: 25\r\nCost is: 5\r\nCost is: 10\r\nCost
+        is: 3\r\n Estimated Cost is: 5\r\nCost is: 5\r\nCost is: 5\r\nCost is: 3\r\nCost
+        is: 10\r\nCost is: 1\r\nCost is: 1\r\n Estimated Cost is: 25\r\nCost is:
+        5\r\nCost is: 5\r\n Estimated Cost is: 25\r\nCost is: 5\r\nCost is: 1\r\nEstimated
+        Cost is: 25\r\nCost is: 1\r\n Estimated Cost is: 25\r\nCost is: 0\r\n Estimated
+        Cost is: 25\r\nCost is: 5\r\nCost is: 5\r\n"
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: PlayTest.dll/[PlayTest][LevelCreatorTest][suite]
     - id: 1002
       uniqueId: PlayTest.dll/LevelCreatorTest/[PlayTest][LevelCreatorTest.IsTileAmountCorrectAfterLevelCreation]
       name: IsTileAmountCorrectAfterLevelCreation
       fullName: LevelCreatorTest.IsTileAmountCorrectAfterLevelCreation
       resultStatus: 1
-      duration: 0.0301877
+      duration: 0.0166664
       messages: 
       output: 'Map size:25 , Tile Amount: 25
 
@@ -903,17 +937,29 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1001
       parentUniqueId: PlayTest.dll/[PlayTest][LevelCreatorTest][suite]
-    m_ResultText: 'IsTileAmountCorrectAfterLevelCreation (0.030s)
-
-      ---
-
-      Map
-      size:25 , Tile Amount: 25'
+    m_ResultText: "GenerateLevelAndCreatePath (0.062s)\n---\nEstimated Cost is: 5\r\nCost
+      is: 10\r\n Estimated Cost is: 5\r\nCost is: 5\r\n Estimated Cost is: 0\r\nCost
+      is: 3\r\n Estimated Cost is: 0\r\nCost is: 0\r\n Estimated Cost is: 0\r\nCost
+      is: 10\r\nCost is: 0\r\n Estimated Cost is: 0\r\nCost is: 10\r\n Estimated
+      Cost is: 0\r\nCost is: 3\r\nCost is: 3\r\n Estimated Cost is: 0\r\nCost is:
+      10\r\nCost is: 5\r\n Estimated Cost is: 25\r\nCost is: 3\r\nCost is: 0\r\n
+      Estimated Cost is: 0\r\nCost is: 5\r\nCost is: 1\r\n Estimated Cost is: 25\r\nCost
+      is: 3\r\nCost is: 1\r\nEstimated Cost is: 0\r\nCost is: 0\r\n Estimated Cost
+      is: 0\r\nCost is: 3\r\nCost is: 10\r\nCost is: 1\r\nCost is: 10\r\n Estimated
+      Cost is: 0\r\nCost is: 5\r\n Estimated Cost is: 0\r\nCost is: 1\r\nCost is:
+      5\r\n Estimated Cost is: 29\r\nCost is: 5\r\nCost is: 5\r\n Estimated Cost
+      is: 1\r\nCost is: 10\r\nCost is: 1\r\n Estimated Cost is: 25\r\nCost is: 1\r\n
+      Estimated Cost is: 25\r\nCost is: 10\r\nCost is: 1\r\n Estimated Cost is: 25\r\nCost
+      is: 5\r\nCost is: 10\r\nCost is: 3\r\n Estimated Cost is: 5\r\nCost is: 5\r\nCost
+      is: 5\r\nCost is: 3\r\nCost is: 10\r\nCost is: 1\r\nCost is: 1\r\n Estimated
+      Cost is: 25\r\nCost is: 5\r\nCost is: 5\r\n Estimated Cost is: 25\r\nCost is:
+      5\r\nCost is: 1\r\nEstimated Cost is: 25\r\nCost is: 1\r\n Estimated Cost is:
+      25\r\nCost is: 0\r\n Estimated Cost is: 25\r\nCost is: 5\r\nCost is: 5"
     m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: b715f0c8
-      m_LastClickedID: -923789897
+      m_SelectedIDs: 37a04113
+      m_LastClickedID: 323067959
       m_ExpandedIDs: bf963092c17428f8b7e87427639ab8316aeb7472ffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
@@ -1007,12 +1053,12 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1517
+    x: 1491
     y: 0
-    width: 403
+    width: 429
     height: 947
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -1033,14 +1079,14 @@ MonoBehaviour:
   m_MinSize: {x: 275, y: 50}
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
-    m_Text: Inspector
+    m_Text: Debug
     m_Image: {fileID: -2667387946076563598, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1517
+    x: 1491
     y: 73
-    width: 402
+    width: 428
     height: 926
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -1055,7 +1101,7 @@ MonoBehaviour:
   m_LastInspectedObjectInstanceID: -1
   m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
-  m_InspectorMode: 0
+  m_InspectorMode: 1
   m_LockTracker:
     m_IsLocked: 0
   m_PreviewWindow: {fileID: 0}

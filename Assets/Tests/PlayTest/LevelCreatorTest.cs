@@ -8,52 +8,20 @@ public class LevelCreatorTest
 { 
     [UnityTest]
     public IEnumerator IsTileAmountCorrectAfterLevelCreation()
-    {
-        LevelCreator levelCreator = SetLevel();
+    { 
+        GameObject mainObj = new GameObject();
+        mainObj = TestHelper.SetManager(mainObj);
+        var levelCreator = TestHelper.SetLevel(mainObj);
+        
         while (!levelCreator.FinishedLevel)
         {
-            yield return null;
+            yield return new WaitForSeconds(1f);
         }
         Assert.AreEqual(levelCreator.MapSize, levelCreator.CreatedTiles.Count);
         Debug.Log($"Map size:{levelCreator.MapSize} , Tile Amount: {levelCreator.CreatedTiles.Count}");
 
-    }
+    } 
 
-    [UnityTest]
-    public IEnumerator GenerateLevelAndCreatePath()
-    { 
-        LevelCreator levelCreator = SetLevel();
-        var pathManager = new GameObject();
-        var pathScript = pathManager.AddComponent<PathSelector>();
-
-        pathScript.StartPath(levelCreator.CreatedTiles[0]); 
-        pathScript.StartPath(levelCreator.CreatedTiles[levelCreator.CreatedTiles.Count - 1]);
-
-        Assert.IsNotNull(pathScript.Nodes);
-        Assert.IsTrue(pathScript.Nodes.Count > 0);
-        
-        yield return null;
-    }
-
-    private static LevelCreator SetLevel()
-    {
-        var gameObject = new GameObject();
-        var levelCreator = gameObject.AddComponent<LevelCreator>();
-        levelCreator.SetHeight(5);
-        levelCreator.SetWidth(5); 
-        levelCreator.SetOffset(new Vector3(1f,0,0.75f));
-        levelCreator.HexTiles = new List<TileObject>
-        { 
-             Resources.Load<TileObject>("Prefabs/TileObjects/WaterTile"),
-             Resources.Load<TileObject>("Prefabs/TileObjects/DesertTile"),
-             Resources.Load<TileObject>("Prefabs/TileObjects/GrassTile"),
-             Resources.Load<TileObject>("Prefabs/TileObjects/MountainTile"),
-             Resources.Load<TileObject>("Prefabs/TileObjects/ForestTile")
-        };
-
-        levelCreator.CreateLevel();
-        return levelCreator;
-    }
-
+    
    
 }

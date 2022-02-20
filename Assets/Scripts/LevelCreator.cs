@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class LevelCreator : MonoBehaviour
-{
-    public static LevelCreator Instance {get; set;}
+{ 
     [SerializeField] List<TileObject> _hexTiles;
     [SerializeField] public int _mapHeight, _mapWidth;
     [SerializeField] Vector3 _offset;
@@ -15,21 +14,37 @@ public class LevelCreator : MonoBehaviour
     public List<HexTile> CreatedTiles => _createdTiles;
     public List<TileObject> HexTiles {get => _hexTiles; set => _hexTiles = value;}
 
-    private void Awake()
+    private void Start()
     {
-        if (Instance != null && Instance != this) 
-        { 
-            Destroy(this); 
-        } 
-        else 
-        { 
-            Instance = this; 
-        } 
+        _mapHeight = (int)UIManager.Instance.HeightAmount;
+        _mapWidth = (int)UIManager.Instance.WidthAmount;
     }
     public void CreateLevel()
-    {  
-        if(_createdTiles.Count > 0) DestroyLevel(); 
+    {
+        DestroyLevel(); 
+        StartCoroutine(CreateLevelRoutine());
+    }
 
+    private void CreateTile(float currentoffsetx, float currentoffsetz)
+    {
+        var tile = _hexTiles[Random.Range(0,_hexTiles.Count)].CreateTile(currentoffsetx, currentoffsetz,_createdTiles.Count); 
+
+        if(_createdTiles == null) _createdTiles = new List<HexTile>(); 
+        _createdTiles.Add(tile);
+    }
+ 
+    public void DestroyLevel()
+    {
+        PathManager.Instance.ResetPath();
+        _createdTiles.ForEach(x => Destroy(x.gameObject));
+        _createdTiles.Clear();
+    }
+    
+    private IEnumerator CreateLevelRoutine()
+    {
+        UIManager.Instance.EnableCreate(false);
+        
+        
         float currentoffsetx = 0, currentoffsetz = 0;
         _finishedLevel = false;
         for(int i = 0; i < _mapHeight; i++)
@@ -43,30 +58,15 @@ public class LevelCreator : MonoBehaviour
             }
             currentoffsetx = 0f;
         }
-        SetAdjacentTiles();
+
+        foreach(HexTile tile in _createdTiles)  
+            tile.GetAdjacentTiles();  
+            
         _finishedLevel = true;
+        
+        UIManager.Instance.EnableCreate(true);
+        yield return null;
     }
-
-    private void CreateTile(float currentoffsetx, float currentoffsetz)
-    {
-        var tile = _hexTiles[Random.Range(0,_hexTiles.Count)].CreateTile(currentoffsetx, currentoffsetz); 
-
-        if(_createdTiles == null) _createdTiles = new List<HexTile>();
-
-        _createdTiles.Add(tile);
-    }
-
-    private void SetAdjacentTiles()
-    {
-        foreach(HexTile tile in _createdTiles) 
-            tile.GetAdjacentTiles(); 
-    }
-    public void DestroyLevel()
-    {
-        _createdTiles.ForEach(x => Destroy(x.gameObject));
-        _createdTiles.Clear();
-    }
-    
     public void SetHeight(float height)
      => _mapHeight = (int)height;
     public void SetWidth(float width)
