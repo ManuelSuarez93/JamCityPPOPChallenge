@@ -47,6 +47,7 @@ public class LevelCreator : MonoBehaviour
         
         float currentoffsetx = 0, currentoffsetz = 0;
         _finishedLevel = false;
+        
         for(int i = 0; i < _mapHeight; i++)
         { 
             currentoffsetz -= i > 0 ? _offset.z : 0;
@@ -54,9 +55,11 @@ public class LevelCreator : MonoBehaviour
             for(int j = 0; j < _mapWidth; j++)
             {
                 currentoffsetx += j > 0 ? _offset.x : 0;
-                CreateTile(currentoffsetx, currentoffsetz);
+                CreateTile(currentoffsetx, currentoffsetz); 
+                yield return null; 
             }
             currentoffsetx = 0f;
+            yield return null; 
         }
 
         foreach(HexTile tile in _createdTiles)  
