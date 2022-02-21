@@ -8,30 +8,6 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12004, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_PixelRect:
-    serializedVersion: 2
-    x: 1920
-    y: 0
-    width: 1920
-    height: 1040
-  m_ShowMode: 0
-  m_Title: Game
-  m_RootView: {fileID: 4}
-  m_MinSize: {x: 200, y: 221}
-  m_MaxSize: {x: 4000, y: 4021}
-  m_Maximized: 1
---- !u!114 &2
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12004, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
@@ -43,38 +19,12 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Test Runner
-  m_RootView: {fileID: 5}
-  m_MinSize: {x: 875, y: 421}
+  m_Title: Game
+  m_RootView: {fileID: 3}
+  m_MinSize: {x: 875, y: 350}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
---- !u!114 &3
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: GameView
-  m_EditorClassIdentifier: 
-  m_Children: []
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1920
-    height: 1040
-  m_MinSize: {x: 200, y: 221}
-  m_MaxSize: {x: 4000, y: 4021}
-  m_ActualView: {fileID: 17}
-  m_Panes:
-  - {fileID: 17}
-  m_Selected: 0
-  m_LastSelected: 0
---- !u!114 &4
+--- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -87,18 +37,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-  - {fileID: 3}
+  - {fileID: 6}
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 0
+    y: 30
     width: 1920
-    height: 1040
-  m_MinSize: {x: 200, y: 221}
-  m_MaxSize: {x: 4000, y: 4021}
-  vertical: 0
-  controlID: 86
---- !u!114 &5
+    height: 947
+  m_MinSize: {x: 300, y: 200}
+  m_MaxSize: {x: 24288, y: 16192}
+  vertical: 1
+  controlID: 25
+--- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -111,9 +61,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-  - {fileID: 6}
-  - {fileID: 8}
-  - {fileID: 7}
+  - {fileID: 4}
+  - {fileID: 2}
+  - {fileID: 5}
   m_Position:
     serializedVersion: 2
     x: 0
@@ -126,7 +76,7 @@ MonoBehaviour:
   m_TopViewHeight: 30
   m_UseBottomView: 1
   m_BottomViewHeight: 20
---- !u!114 &6
+--- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -148,7 +98,7 @@ MonoBehaviour:
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
   m_LastLoadedLayoutName: 
---- !u!114 &7
+--- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -169,6 +119,56 @@ MonoBehaviour:
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
+--- !u!114 &6
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 7}
+  - {fileID: 12}
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1920
+    height: 947
+  m_MinSize: {x: 300, y: 200}
+  m_MaxSize: {x: 24288, y: 16192}
+  vertical: 0
+  controlID: 26
+--- !u!114 &7
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 8}
+  - {fileID: 11}
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1491
+    height: 947
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 16192, y: 16192}
+  vertical: 1
+  controlID: 27
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -183,17 +183,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Children:
   - {fileID: 9}
-  - {fileID: 14}
+  - {fileID: 10}
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 30
-    width: 1920
-    height: 947
-  m_MinSize: {x: 300, y: 200}
-  m_MaxSize: {x: 24288, y: 16192}
+    y: 0
+    width: 1491
+    height: 847
+  m_MinSize: {x: 200, y: 100}
+  m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 71
+  controlID: 18214
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -203,22 +203,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
-  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Children:
-  - {fileID: 10}
-  - {fileID: 13}
+  m_Children: []
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1491
-    height: 947
+    width: 409
+    height: 847
   m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 16192, y: 16192}
-  vertical: 1
-  controlID: 72
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 14}
+  m_Panes:
+  - {fileID: 14}
+  m_Selected: 0
+  m_LastSelected: 0
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -227,23 +228,25 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: GameView
   m_EditorClassIdentifier: 
-  m_Children:
-  - {fileID: 11}
-  - {fileID: 12}
+  m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 0
+    x: 409
     y: 0
-    width: 1491
-    height: 445
-  m_MinSize: {x: 200, y: 100}
-  m_MaxSize: {x: 16192, y: 8096}
-  vertical: 0
-  controlID: 73
+    width: 1082
+    height: 847
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 15}
+  m_Panes:
+  - {fileID: 13}
+  - {fileID: 15}
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -254,77 +257,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
+  m_Name: ConsoleWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 0
-    width: 810
-    height: 445
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 16}
-  m_Panes:
-  - {fileID: 16}
-  m_Selected: 0
-  m_LastSelected: 0
---- !u!114 &12
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: SceneView
-  m_EditorClassIdentifier: 
-  m_Children: []
-  m_Position:
-    serializedVersion: 2
-    x: 810
-    y: 0
-    width: 681
-    height: 445
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 15}
-  m_Panes:
-  - {fileID: 15}
-  m_Selected: 0
-  m_LastSelected: 0
---- !u!114 &13
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: TestRunnerWindow
-  m_EditorClassIdentifier: 
-  m_Children: []
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 445
+    y: 847
     width: 1491
-    height: 502
+    height: 100
   m_MinSize: {x: 101, y: 121}
   m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 20}
+  m_ActualView: {fileID: 17}
   m_Panes:
+  - {fileID: 16}
+  - {fileID: 17}
   - {fileID: 18}
-  - {fileID: 19}
-  - {fileID: 20}
-  m_Selected: 2
-  m_LastSelected: 1
---- !u!114 &14
+  m_Selected: 1
+  m_LastSelected: 2
+--- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -345,12 +296,12 @@ MonoBehaviour:
     height: 947
   m_MinSize: {x: 275, y: 50}
   m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 21}
+  m_ActualView: {fileID: 19}
   m_Panes:
-  - {fileID: 21}
+  - {fileID: 19}
   m_Selected: 0
   m_LastSelected: 0
---- !u!114 &15
+--- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -370,10 +321,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 810
-    y: 73
-    width: 679
-    height: 424
+    x: 422
+    y: 19
+    width: 1068
+    height: 394
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -575,9 +526,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 474.76114, y: 80.573944, z: -0.8526623}
+    m_Target: {x: 603.9205, y: -177.0011, z: -3.199871}
     speed: 2
-    m_Value: {x: 474.76114, y: 80.573944, z: -0.8526623}
+    m_Value: {x: 603.9205, y: -177.0011, z: -3.199871}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -628,9 +579,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 528.1661
+    m_Target: 754.28375
     speed: 2
-    m_Value: 528.1661
+    m_Value: 754.28375
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -648,14 +599,14 @@ MonoBehaviour:
     m_FarClip: 10000
     m_DynamicClip: 1
     m_OcclusionCulling: 0
-  m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
-  m_LastSceneViewOrtho: 0
+  m_LastSceneViewRotation: {x: 0.23761603, y: -0.11823155, z: 0.045552205, w: 0.9630663}
+  m_LastSceneViewOrtho: 1
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
   m_SceneVisActive: 1
   m_LastLockedObject: {fileID: 0}
   m_ViewIsLockedToObject: 0
---- !u!114 &16
+--- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -677,8 +628,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 73
-    width: 809
-    height: 424
+    width: 408
+    height: 826
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -686,9 +637,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 98f2fffff0f2fffff8f5ffff72f6ffffcaf6ffffbef9ffff3cfbffff
+      m_SelectedIDs: 40590000
+      m_LastClickedID: 22848
+      m_ExpandedIDs: 9615f6ff8456f7ff9456f7ffa056f7ff2abafdffc2bafdff8a9afeffa89afeff6a9cfeff889cfeff869efeff3af7feffe417ffff2a2cffff8c33ffff283affffbe3affff183effff3cfbffffae580000ca580000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -704,7 +655,7 @@ MonoBehaviour:
         m_IsRenaming: 0
         m_OriginalEventType: 11
         m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 11}
+        m_ClientGUIView: {fileID: 9}
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
@@ -712,7 +663,7 @@ MonoBehaviour:
       m_IsLocked: 0
     m_CurrentSortingName: TransformSorting
   m_WindowGUID: 4c969a2b90040154d917609493e03593
---- !u!114 &17
+--- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -732,10 +683,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1920
-    y: 0
-    width: 1920
-    height: 1019
+    x: 409
+    y: 73
+    width: 1080
+    height: 826
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -748,7 +699,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 1774, y: 998}
+  m_TargetSize: {x: 1080, y: 608}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -763,10 +714,10 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -887
-    m_HBaseRangeMax: 887
-    m_VBaseRangeMin: -499
-    m_VBaseRangeMax: 499
+    m_HBaseRangeMin: -540
+    m_HBaseRangeMax: 540
+    m_VBaseRangeMin: -304
+    m_VBaseRangeMax: 304
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -784,29 +735,29 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 1920
-      height: 998
+      width: 1080
+      height: 805
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 960, y: 499}
+    m_Translation: {x: 540, y: 402.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -960
-      y: -499
-      width: 1920
-      height: 998
+      x: -540
+      y: -402.5
+      width: 1080
+      height: 805
     m_MinimalGUI: 1
   m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 1920, y: 1019}
+  m_LastWindowPixelSize: {x: 1080, y: 826}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
   m_XRRenderMode: 0
   m_RenderTexture: {fileID: 0}
---- !u!114 &18
+--- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -827,9 +778,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 643
+    y: 488
     width: 1490
-    height: 356
+    height: 511
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -847,22 +798,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Tests/PlayTest
+    - Assets/Resources/Prefabs
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 82
   m_LastFolders:
-  - Assets/Tests/PlayTest
+  - Assets/Resources/Prefabs
   m_LastFoldersGridSize: 82
   m_LastProjectPath: C:\Users\Admin\Documents\gameprojects\JamCityPPOPChallenge
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: ec8e0000
-    m_LastClickedID: 36588
-    m_ExpandedIDs: 000000002e5a0000305a0000325a0000345a0000365a0000
+    m_SelectedIDs: 2c5a0000
+    m_LastClickedID: 23084
+    m_ExpandedIDs: 00000000285a00002a5a00002c5a00002e5a000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -890,7 +841,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000002e5a0000305a0000325a0000345a0000365a0000
+    m_ExpandedIDs: 00000000285a00002a5a00002c5a00002e5a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -915,8 +866,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
+    m_SelectedInstanceIDs: e67a0000
+    m_LastClickedInstanceID: 31462
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
@@ -946,7 +897,7 @@ MonoBehaviour:
     m_GridSize: 82
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 207
---- !u!114 &19
+--- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -967,14 +918,14 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 518
+    y: 920
     width: 1490
-    height: 481
+    height: 79
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
     m_SaveData: []
---- !u!114 &20
+--- !u!114 &18
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -995,20 +946,20 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 518
+    y: 488
     width: 1490
-    height: 481
+    height: 511
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
     m_SaveData: []
   m_Spl:
-    ID: 110
+    ID: 17254
     splitterInitialOffset: 146
     currentActiveSplitter: -1
     realSizes:
-    - 144
-    - 267
+    - 155
+    - 286
     relativeSizes:
     - 0.3511111
     - 0.6488889
@@ -1018,7 +969,7 @@ MonoBehaviour:
     maxSizes:
     - 0
     - 0
-    lastTotalSize: 411
+    lastTotalSize: 441
     splitSize: 6
     xOffset: 0
     m_Version: 1
@@ -1028,14 +979,14 @@ MonoBehaviour:
     oldSplitSize: 0
   m_TestTypeToolbarIndex: 0
   m_PlayModeTestListGUI:
-    m_Window: {fileID: 20}
+    m_Window: {fileID: 18}
     m_NewResultList:
     - id: 1005
       uniqueId: '[JamCityPPOPChallenge][suite]'
       name: JamCityPPOPChallenge
       fullName: JamCityPPOPChallenge
       resultStatus: 2
-      duration: 52.436127
+      duration: 0.2728473
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -1046,218 +997,244 @@ MonoBehaviour:
       categories: []
       parentId: 
       parentUniqueId: 
-    - id: 1004
-      uniqueId: '[PlayTest][C:/Users/Admin/Documents/gameprojects/JamCityPPOPChallenge/Library/ScriptAssemblies/PlayTest.dll][suite]'
-      name: PlayTest.dll
-      fullName: C:/Users/Admin/Documents/gameprojects/JamCityPPOPChallenge/Library/ScriptAssemblies/PlayTest.dll
-      resultStatus: 2
-      duration: 52.3522
-      messages: One or more child tests had errors
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1000
-      parentUniqueId: '[JamCityPPOPChallenge][suite]'
-    - id: 1001
-      uniqueId: PlayTest.dll/[PlayTest][LevelCreatorTest][suite]
-      name: LevelCreatorTest
-      fullName: LevelCreatorTest
-      resultStatus: 2
-      duration: 52.29186
-      messages: One or more child tests had errors
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1004
-      parentUniqueId: '[PlayTest][C:/Users/Admin/Documents/gameprojects/JamCityPPOPChallenge/Library/ScriptAssemblies/PlayTest.dll][suite]'
-    - id: 1002
-      uniqueId: PlayTest.dll/LevelCreatorTest/[PlayTest][LevelCreatorTest.IsTileAmountCorrectAfterLevelCreation]
-      name: IsTileAmountCorrectAfterLevelCreation
-      fullName: LevelCreatorTest.IsTileAmountCorrectAfterLevelCreation
-      resultStatus: 2
-      duration: 52.274612
-      messages: "  Expected: 0\r\n  But was:  5\r\n"
-      output: 'The referenced script (Unknown) on this Behaviour is missing!
+    m_ResultText: 'IsTileAmountCorrectAfterLevelCreation (0.087s)
 
-        The
-        referenced script on this Behaviour (Game Object ''Text (TMP)'') is missing!
+      ---
 
-        The
-        referenced script on this Behaviour (Game Object ''Text (TMP)'') is missing!
+      The
+      referenced script (Unknown) on this Behaviour is missing!
 
-        The
-        referenced script (Unknown) on this Behaviour is missing!
+      The referenced
+      script on this Behaviour (Game Object ''Text (TMP)'') is missing!
 
-        The referenced
-        script on this Behaviour (Game Object ''Text (TMP)'') is missing!
+      The
+      referenced script (Unknown) on this Behaviour is missing!
 
-        The
-        referenced script on this Behaviour (Game Object ''Text (TMP)'') is missing!
+      The referenced
+      script on this Behaviour (Game Object ''Text (TMP)'') is missing!
 
-        The
-        referenced script (Unknown) on this Behaviour is missing!
+      The
+      referenced script on this Behaviour (Game Object ''Text (TMP)'') is missing!
 
-        The referenced
-        script on this Behaviour (Game Object ''Text (TMP)'') is missing!
+      The
+      referenced script (Unknown) on this Behaviour is missing!
 
-        The
-        referenced script on this Behaviour (Game Object ''Text (TMP)'') is missing!
+      The referenced
+      script on this Behaviour (Game Object ''Text (TMP)'') is missing!
 
-        The
-        referenced script (Unknown) on this Behaviour is missing!
+      The
+      referenced script on this Behaviour (Game Object ''Text (TMP)'') is missing!
 
-        The referenced
-        script on this Behaviour (Game Object ''Text (TMP)'') is missing!
+      The
+      referenced script (Unknown) on this Behaviour is missing!
 
-        The
-        referenced script on this Behaviour (Game Object ''Text (TMP)'') is missing!
+      The referenced
+      script on this Behaviour (Game Object ''Text (TMP)'') is missing!
 
-        The
-        referenced script (Unknown) on this Behaviour is missing!
+      The
+      referenced script on this Behaviour (Game Object ''Text (TMP)'') is missing!
 
-        The referenced
-        script on this Behaviour (Game Object ''Text (TMP)'') is missing!
+      The
+      referenced script (Unknown) on this Behaviour is missing!
 
-        The
-        referenced script on this Behaviour (Game Object ''Text (TMP)'') is missing!
+      The referenced
+      script on this Behaviour (Game Object ''Text (TMP)'') is missing!
 
-'
-      stacktrace: 'at LevelCreatorTest+<IsTileAmountCorrectAfterLevelCreation>d__0.MoveNext
-        () [0x0007a] in C:\Users\Admin\Documents\gameprojects\JamCityPPOPChallenge\Assets\Tests\PlayTest\LevelCreatorTest.cs:20
+      The
+      referenced script on this Behaviour (Game Object ''Text (TMP)'') is missing!
 
-        at
-        UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0004e]
-        in C:\Users\Admin\Documents\gameprojects\JamCityPPOPChallenge\Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:46
+      The
+      referenced script (Unknown) on this Behaviour is missing!
 
-'
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1001
-      parentUniqueId: PlayTest.dll/[PlayTest][LevelCreatorTest][suite]
-    - id: 1004
-      uniqueId: PlayTest.dll/[PlayTest][PathManagerTest][suite]
-      name: PathManagerTest
-      fullName: PathManagerTest
-      resultStatus: 2
-      duration: 0.0494266
-      messages: One or more child tests had errors
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1007
-      parentUniqueId: '[PlayTest][C:/Users/Admin/Documents/gameprojects/JamCityPPOPChallenge/Library/ScriptAssemblies/PlayTest.dll][suite]'
-    - id: 1004
-      uniqueId: PlayTest.dll/PathManagerTest/[PlayTest][PathManagerTest.GenerateLevelAndCreatePath]
-      name: GenerateLevelAndCreatePath
-      fullName: PathManagerTest.GenerateLevelAndCreatePath
-      resultStatus: 2
-      duration: 0.0365875
-      messages: "  Expected: not null\r\n  But was:  null\r\n"
-      output: 'The referenced script (Unknown) on this Behaviour is missing!
+      The referenced
+      script on this Behaviour (Game Object ''Text (TMP)'') is missing!
 
-        The
-        referenced script on this Behaviour (Game Object ''Text (TMP)'') is missing!
+      The
+      referenced script on this Behaviour (Game Object ''Text (TMP)'') is missing!
 
-        The
-        referenced script on this Behaviour (Game Object ''Text (TMP)'') is missing!
+      The
+      referenced script (Unknown) on this Behaviour is missing!
 
-        The
-        referenced script (Unknown) on this Behaviour is missing!
+      The referenced
+      script on this Behaviour (Game Object ''Text (TMP)'') is missing!
 
-        The referenced
-        script on this Behaviour (Game Object ''Text (TMP)'') is missing!
+      The
+      referenced script on this Behaviour (Game Object ''Text (TMP)'') is missing!
 
-        The
-        referenced script on this Behaviour (Game Object ''Text (TMP)'') is missing!
+      The
+      referenced script (Unknown) on this Behaviour is missing!
 
-        The
-        referenced script (Unknown) on this Behaviour is missing!
+      The referenced
+      script on this Behaviour (Game Object ''Text (TMP)'') is missing!
 
-        The referenced
-        script on this Behaviour (Game Object ''Text (TMP)'') is missing!
+      The
+      referenced script on this Behaviour (Game Object ''Text (TMP)'') is missing!
 
-        The
-        referenced script on this Behaviour (Game Object ''Text (TMP)'') is missing!
+      The
+      referenced script (Unknown) on this Behaviour is missing!
 
-        The
-        referenced script (Unknown) on this Behaviour is missing!
+      The referenced
+      script on this Behaviour (Game Object ''Text (TMP)'') is missing!
 
-        The referenced
-        script on this Behaviour (Game Object ''Text (TMP)'') is missing!
+      The
+      referenced script on this Behaviour (Game Object ''Text (TMP)'') is missing!
 
-        The
-        referenced script on this Behaviour (Game Object ''Text (TMP)'') is missing!
+      The
+      referenced script (Unknown) on this Behaviour is missing!
 
-        The
-        referenced script (Unknown) on this Behaviour is missing!
+      The referenced
+      script on this Behaviour (Game Object ''Text (TMP)'') is missing!
 
-        The referenced
-        script on this Behaviour (Game Object ''Text (TMP)'') is missing!
+      The
+      referenced script on this Behaviour (Game Object ''Text (TMP)'') is missing!
 
-        The
-        referenced script on this Behaviour (Game Object ''Text (TMP)'') is missing!
+      The
+      referenced script (Unknown) on this Behaviour is missing!
 
-'
-      stacktrace: 'at PathManagerTest+<GenerateLevelAndCreatePath>d__0.MoveNext ()
-        [0x000b7] in C:\Users\Admin\Documents\gameprojects\JamCityPPOPChallenge\Assets\Tests\PlayTest\PathManagerTest.cs:22
+      The referenced
+      script on this Behaviour (Game Object ''Text (TMP)'') is missing!
 
-        at
-        UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0004e]
-        in C:\Users\Admin\Documents\gameprojects\JamCityPPOPChallenge\Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:46
+      The
+      referenced script on this Behaviour (Game Object ''Text (TMP)'') is missing!
 
-'
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1003
-      parentUniqueId: PlayTest.dll/[PlayTest][PathManagerTest][suite]
-    m_ResultText: "IsTileAmountCorrectAfterLevelCreation (52.275s)\n---\nExpected:
-      0\r\n  But was:  5\n---\nat LevelCreatorTest+<IsTileAmountCorrectAfterLevelCreation>d__0.MoveNext
-      () [0x0007a] in C:\\Users\\Admin\\Documents\\gameprojects\\JamCityPPOPChallenge\\Assets\\Tests\\PlayTest\\LevelCreatorTest.cs:20\r\nat
-      UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0004e] in
-      C:\\Users\\Admin\\Documents\\gameprojects\\JamCityPPOPChallenge\\Library\\PackageCache\\com.unity.test-framework@1.1.29\\UnityEngine.TestRunner\\NUnitExtensions\\Attributes\\TestEnumerator.cs:46\n---\nThe
-      referenced script (Unknown) on this Behaviour is missing!\r\nThe referenced
-      script on this Behaviour (Game Object 'Text (TMP)') is missing!\r\nThe referenced
-      script on this Behaviour (Game Object 'Text (TMP)') is missing!\r\nThe referenced
-      script (Unknown) on this Behaviour is missing!\r\nThe referenced script on
-      this Behaviour (Game Object 'Text (TMP)') is missing!\r\nThe referenced script
-      on this Behaviour (Game Object 'Text (TMP)') is missing!\r\nThe referenced
-      script (Unknown) on this Behaviour is missing!\r\nThe referenced script on
-      this Behaviour (Game Object 'Text (TMP)') is missing!\r\nThe referenced script
-      on this Behaviour (Game Object 'Text (TMP)') is missing!\r\nThe referenced
-      script (Unknown) on this Behaviour is missing!\r\nThe referenced script on
-      this Behaviour (Game Object 'Text (TMP)') is missing!\r\nThe referenced script
-      on this Behaviour (Game Object 'Text (TMP)') is missing!\r\nThe referenced
-      script (Unknown) on this Behaviour is missing!\r\nThe referenced script on
-      this Behaviour (Game Object 'Text (TMP)') is missing!\r\nThe referenced script
-      on this Behaviour (Game Object 'Text (TMP)') is missing!"
-    m_ResultStacktrace: 'at LevelCreatorTest+<IsTileAmountCorrectAfterLevelCreation>d__0.MoveNext
-      () [0x0007a] in C:\Users\Admin\Documents\gameprojects\JamCityPPOPChallenge\Assets\Tests\PlayTest\LevelCreatorTest.cs:20
+      The
+      referenced script (Unknown) on this Behaviour is missing!
 
-      at
-      UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0004e] in
-      C:\Users\Admin\Documents\gameprojects\JamCityPPOPChallenge\Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:46
+      The referenced
+      script on this Behaviour (Game Object ''Text (TMP)'') is missing!
 
-'
+      The
+      referenced script on this Behaviour (Game Object ''Text (TMP)'') is missing!
+
+      The
+      referenced script (Unknown) on this Behaviour is missing!
+
+      The referenced
+      script on this Behaviour (Game Object ''Text (TMP)'') is missing!
+
+      The
+      referenced script on this Behaviour (Game Object ''Text (TMP)'') is missing!
+
+      The
+      referenced script (Unknown) on this Behaviour is missing!
+
+      The referenced
+      script on this Behaviour (Game Object ''Text (TMP)'') is missing!
+
+      The
+      referenced script on this Behaviour (Game Object ''Text (TMP)'') is missing!
+
+      The
+      referenced script (Unknown) on this Behaviour is missing!
+
+      The referenced
+      script on this Behaviour (Game Object ''Text (TMP)'') is missing!
+
+      The
+      referenced script on this Behaviour (Game Object ''Text (TMP)'') is missing!
+
+      The
+      referenced script (Unknown) on this Behaviour is missing!
+
+      The referenced
+      script on this Behaviour (Game Object ''Text (TMP)'') is missing!
+
+      The
+      referenced script on this Behaviour (Game Object ''Text (TMP)'') is missing!
+
+      The
+      referenced script (Unknown) on this Behaviour is missing!
+
+      The referenced
+      script on this Behaviour (Game Object ''Text (TMP)'') is missing!
+
+      The
+      referenced script on this Behaviour (Game Object ''Text (TMP)'') is missing!
+
+      The
+      referenced script (Unknown) on this Behaviour is missing!
+
+      The referenced
+      script on this Behaviour (Game Object ''Text (TMP)'') is missing!
+
+      The
+      referenced script on this Behaviour (Game Object ''Text (TMP)'') is missing!
+
+      The
+      referenced script (Unknown) on this Behaviour is missing!
+
+      The referenced
+      script on this Behaviour (Game Object ''Text (TMP)'') is missing!
+
+      The
+      referenced script on this Behaviour (Game Object ''Text (TMP)'') is missing!
+
+      The
+      referenced script (Unknown) on this Behaviour is missing!
+
+      The referenced
+      script on this Behaviour (Game Object ''Text (TMP)'') is missing!
+
+      The
+      referenced script on this Behaviour (Game Object ''Text (TMP)'') is missing!
+
+      The
+      referenced script (Unknown) on this Behaviour is missing!
+
+      The referenced
+      script on this Behaviour (Game Object ''Text (TMP)'') is missing!
+
+      The
+      referenced script on this Behaviour (Game Object ''Text (TMP)'') is missing!
+
+      The
+      referenced script (Unknown) on this Behaviour is missing!
+
+      The referenced
+      script on this Behaviour (Game Object ''Text (TMP)'') is missing!
+
+      The
+      referenced script on this Behaviour (Game Object ''Text (TMP)'') is missing!
+
+      The
+      referenced script (Unknown) on this Behaviour is missing!
+
+      The referenced
+      script on this Behaviour (Game Object ''Text (TMP)'') is missing!
+
+      The
+      referenced script on this Behaviour (Game Object ''Text (TMP)'') is missing!
+
+      The
+      referenced script (Unknown) on this Behaviour is missing!
+
+      The referenced
+      script on this Behaviour (Game Object ''Text (TMP)'') is missing!
+
+      The
+      referenced script on this Behaviour (Game Object ''Text (TMP)'') is missing!
+
+      The
+      referenced script (Unknown) on this Behaviour is missing!
+
+      The referenced
+      script on this Behaviour (Game Object ''Text (TMP)'') is missing!
+
+      The
+      referenced script on this Behaviour (Game Object ''Text (TMP)'') is missing!
+
+      The
+      referenced script (Unknown) on this Behaviour is missing!
+
+      The referenced
+      script on this Behaviour (Game Object ''Text (TMP)'') is missing!
+
+      The
+      referenced script on this Behaviour (Game Object ''Text (TMP)'') is missing!
+
+      Map
+      size:25 , Tile Amount: 25'
+    m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: b715f0c8
@@ -1290,7 +1267,7 @@ MonoBehaviour:
       - Uncategorized
     m_SelectedOption: 0
   m_EditModeTestListGUI:
-    m_Window: {fileID: 20}
+    m_Window: {fileID: 18}
     m_NewResultList:
     - id: 1000
       uniqueId: '[JamCityPPOPChallenge][suite]'
@@ -1340,7 +1317,7 @@ MonoBehaviour:
       selectedCategoryMask: 0
       availableCategories:
       - Uncategorized
---- !u!114 &21
+--- !u!114 &19
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1355,7 +1332,7 @@ MonoBehaviour:
   m_MinSize: {x: 275, y: 50}
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
-    m_Text: Debug
+    m_Text: Inspector
     m_Image: {fileID: -2667387946076563598, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
@@ -1377,7 +1354,7 @@ MonoBehaviour:
   m_LastInspectedObjectInstanceID: -1
   m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
-  m_InspectorMode: 1
+  m_InspectorMode: 0
   m_LockTracker:
     m_IsLocked: 0
   m_PreviewWindow: {fileID: 0}

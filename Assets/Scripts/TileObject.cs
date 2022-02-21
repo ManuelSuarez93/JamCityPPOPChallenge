@@ -9,11 +9,12 @@ public class TileObject : ScriptableObject
     [SerializeField] GameObject _hexPrefab;
     [SerializeField] Material _tileTexture;
     
-    public HexTile CreateTile(float currentoffsetx, float currentoffsetz, int tileNumber)
+    public HexTile CreateTile(float currentoffsetx, float currentoffsetz, int tileNumber, Vector3 moveOnSpawn, float timeAmount)
     {
         var tile = Instantiate(_hexPrefab, new Vector3(currentoffsetx, 0, currentoffsetz), Quaternion.identity).GetComponent<HexTile>();
         if (tile != null)
             tile.InitializeTile(_tileType,_tileTexture, tileNumber); 
+        tile.MoveTile(tile.ModelPosition + moveOnSpawn, tile.ModelPosition, timeAmount);
             
         return tile;
     }
